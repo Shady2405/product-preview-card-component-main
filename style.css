@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.bigcontainer{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 600px;
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", sans-serif;
+    
+}
+.container .image {
+    width: 300px;
+    border-radius: 10px 0 0 10px;
+}
+.imagemob{
+    display: none;
+    width: 300px;
+    border-radius: 10px 10px 0 0px;
+}
+.container h1{
+    color: black;
+    font-family: "Fraunces", serif;
+    font-size: 32px;
+    line-height: 32px;
+}
+.paragraph{
+    width: 300px;
+    height: 450px;
+    padding: 2rem;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: white;
+    border-radius: 0 10px 10px 0px;
+}
+.perfume{
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 14px;
+}
+.paragraph .floral{
+    line-height: 1.4rem;
+}
+.price{
+    display: flex;
+    align-items: center;
+
+}
+.price span{
+    margin-left: 1.5rem;
+}
+.price h1{
+    color: hsl(158, 36%, 37%);
+}
+.container button{
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    width: 240px;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.container button:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+.container button img{
+    margin-right: 10px;
+}
+@media screen and (max-width: 630px) {
+    .container{
+        flex-direction: column;
+        width: 680px;
+    }
+    .image{
+        display: none;
+    }
+    .imagemob{
+        display: block;
+        width: 340px;
+    }
+    .paragraph{
+        border-radius: 0 0 10px 10px;
+        width: 340px;
+        height: auto;
+    }
+    .paragraph h1{
+        font-size: 31px;
+    } 
+    .container button{
+        margin-left: -9px;
+        width: 295px;
+    }
+}
